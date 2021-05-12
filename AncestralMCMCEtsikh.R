@@ -20,10 +20,7 @@ Nb = 134 #number of behaviors
 # sink("ancestral0.out")
 
 # ---Defining phylogeny -> pedigree variable for MCMCglmm
-#tt="((D. yakuba:0.09,D. santomea:0.09)oldyasa:0.44,((D. sechelia:0.15,D. simulans:0.15,D. mauritiana:0.15)oldsim:0.14,D. melanogaster:0.29)oldmela:0.24);"
-#tt="(D. yakuba:0.09,D. santomea:0.09);"
-#tt="((D. sechelia:0.15,D. simulans:0.15,D. mauritiana:0.15)oldsim:0.14,D. melanogaster:0.29);"
-#tt="(D. sechelia:0.15,D. simulans:0.15,D. mauritiana:0.15);"
+
 tt="((yakuba:0.09,santomea:0.09)oldyasa:0.44,((sechelia:0.15,simulans:0.15,mauritiana:0.15)oldsim:0.14,melanogaster:0.29)oldmela:0.24);"
 
 flytree<-read.tree(text=tt)
@@ -31,10 +28,8 @@ flytree<-read.tree(text=tt)
 
 # ---Load the dataset: l_i= log p(behavior_i) - log p(behavior_0) 
 # 134 behaviors + 0 behavior, 593 flies from 6 species (column-> animal)
-#LFlydat <- read.table("../../data/logDatFlyLapSmoothAll.txt", header=TRUE, sep="\t", row.names="id")
-#LFlydat <- read.table("logDatFlyLapSmoothAll.txt", header=TRUE, sep="\t", row.names="id")
-#LFlydat <- read.table("logDatFlyLapSmoothAllNewNames.txt", header=TRUE, sep="\t", row.names="id")
-LFlydat <- read.table("../../data/logDatFlySmoothAllMinusYak00NewNames.txt", header=TRUE, sep="\t", row.names="id")
+
+LFlydat <- read.table("../../data/LogBehavioralData.txt", header=TRUE, sep="\t", row.names="id")
 
 
 # ---Defining prior
