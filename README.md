@@ -1,6 +1,7 @@
 # behavioral-evolution
 
 # Data
-Logarithm of the probability of performing a particular behavior i. %5Cfrac%7B%5Csigma%7D%7B%5Cmu%7D
+Logarithm of the probability of performing a particular behavior i (http://latex.codecogs.com/svg.latex%5Cvec%7BP%7D_i)
+
 
 Code for Hernandez, Rivera, et al (2021)
