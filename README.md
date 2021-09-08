@@ -1,4 +1,6 @@
 # behavioral-evolution
+This is code related to the paper: Hernández DG, Rivera C, Cande J, Zhou B, Stern D, Berman GJ. A framework for studying behavioral evolution by reconstructing ancestral repertoires. eLife. 2021;10:e61806.
+
 
 # Data 
 LogBehaviorData.txt: Data set containing the logarithm of the probability of performing a particular behavior i (P_i) for each of the 561 flies.
