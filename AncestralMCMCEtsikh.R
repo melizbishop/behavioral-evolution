@@ -29,7 +29,7 @@ flytree<-read.tree(text=tt)
 # ---Load the dataset: l_i= log p(behavior_i) - log p(behavior_0) 
 # 134 behaviors + 0 behavior, 593 flies from 6 species (column-> animal)
 
-LFlydat <- read.table("../../data/LogBehavioralData.txt", header=TRUE, sep="\t", row.names="id")
+LFlydat <- read.table("../../data/alphas.txt", header=TRUE, sep="\t", row.names="id")
 
 
 # ---Defining prior
